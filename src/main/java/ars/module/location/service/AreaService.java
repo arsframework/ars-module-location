@@ -4,8 +4,6 @@ import ars.invoke.local.Api;
 import ars.module.location.model.Area;
 import ars.database.service.TreeService;
 import ars.database.service.BasicService;
-import ars.database.service.ExportService;
-import ars.database.service.ImportService;
 
 /**
  * 区域业务操作接口
@@ -16,7 +14,6 @@ import ars.database.service.ImportService;
  *            数据模型
  */
 @Api("location/area")
-public interface AreaService<T extends Area>
-		extends BasicService<T>, TreeService<T>, ImportService<T>, ExportService<T> {
+public interface AreaService<T extends Area> extends BasicService<T>, TreeService<T> {
 
 }
