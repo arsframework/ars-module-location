@@ -1,7 +1,5 @@
 package ars.module.location.service;
 
-import java.util.Map;
-
 import ars.invoke.request.Requester;
 import ars.invoke.request.ParameterInvalidException;
 import ars.database.repository.Query;
@@ -20,8 +18,8 @@ import ars.module.location.service.AreaService;
 public abstract class AbstractAreaService<T extends Area> extends StandardGeneralService<T> implements AreaService<T> {
 
 	@Override
-	public void initObject(Requester requester, T entity, Map<String, Object> parameters) {
-		super.initObject(requester, entity, parameters);
+	public void initObject(Requester requester, T entity) {
+		super.initObject(requester, entity);
 		Area parent = entity.getParent();
 		Query<T> query = this.getRepository().query().ne("id", entity.getId()).eq("name", entity.getName());
 		if (parent == null) {
