@@ -5,11 +5,9 @@ import ars.database.repository.Repository;
 
 /**
  * 区域数据操作接口
- * 
- * @author yongqiangwu
- * 
- * @param <T>
- *            数据模型
+ *
+ * @param <T> 数据模型
+ * @author wuyongqiang
  */
 public interface AreaRepository<T extends Area> extends Repository<T> {
 

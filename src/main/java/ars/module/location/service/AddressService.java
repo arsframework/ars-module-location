@@ -6,11 +6,9 @@ import ars.database.service.BasicService;
 
 /**
  * 地址业务操作接口
- * 
- * @author yongqiangwu
- * 
- * @param <T>
- *            数据模型
+ *
+ * @param <T> 数据模型
+ * @author wuyongqiang
  */
 @Api("location/address")
 public interface AddressService<T extends Address> extends BasicService<T> {
